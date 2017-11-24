@@ -15,13 +15,13 @@ public class Interface extends Application {
 				System.err.format("skipping %s %s\n", url, e);
 				continue;
 			}
-			System.out.format("Downloading %s:", downloader);
-			
-			downloader.progressProperty().addListener((obs, o, n) -> {
-				System.out.print(".");
-				System.out.flush();
-			});
-			
+//			System.out.format("Downloading %s:", downloader);
+//			
+//			downloader.progressProperty().addListener((obs, o, n) -> {
+//				System.out.print(".");
+//				System.out.flush();
+//			});
+//			
 			String filename;
 			try {
 				filename = downloader.download();
